@@ -1,0 +1,40 @@
+###ASSIGNMENT OVERVIEW###
+The goal of this project is to gain experience with mathematical manipulation of numeric values.
+The program will calculate areas and volumes to determine materials required for a gardening project.
+
+The basic design consist of prompting the user for information,
+receiving information,processing that information,and then displaying the result.
+
+The garden is a perfect square.The four outer flowerbeds are congruent semicircles and the central flowerbed is a perfect circle.
+
+###PROJECT DESCRIPTION###
+The program should prompt the user for the following information:
+1.The side lenght(in feet) of the finished garden.
+2.The recommended spacing (in feet) between plants.
+3.The depth (in feet) of the flowerbeds.
+4.The depth(in feet) of the filled areas.
+
+Next estimate the number of plants and the amount of fill and flowerbed soil needed.
+
+Finally,it should report the following quantities needed for the garden:
+1.Number of plants for each type of flowerbed(semicircle and circle) and total number number of plants for the garden.
+2.Cubic yards of soil for each type of flowerbed(semicircle and circle) and total cubic yards of soil for the garden,rounded t one decimal place.
+3.Total cubic yards of fill material for the garden,rounded to one decimal place.
+
+###ASSIGNMENT NOTES###
+To clarify the problem specifications,we provide at the end of this document a snapshot of interaction with the already written program.
+
+The formula for the area A of a circle is A=pi.r^2,where r denotes the radius.For this calculation,you should use the value of pi provided in the Python math module.After importing the math module,the name math.pi returns(a close approximation to) the value of pi.
+
+To estimate the number of plants for a flowerbed,dividethe area of the flowerbed by the area needed per plant(square of the recommended distance between plants),
+and then truncate this result.
+To truncate a float, convert it to an int using the int function which implicity truncates the float
+or use the math.trunc() function.
+Be careful,the number of plants in semicircle may not be exactly half of the plants in a full circle.
+
+Here is an outline of your program:
+1.Prompt for input(use input)
+2.Convert the input string to numbers(use float)
+3.Do some mathematical calculations using the input numbers to get results.
+4.Print the results(use print).
+
